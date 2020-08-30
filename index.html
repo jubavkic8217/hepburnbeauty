@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Main css-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hepburn Beauty</title>
+    <script src="js/jquery.js"></script>
+    <script src="jquery.validate.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<body>
+    <section class="container">
+
+    <div class ="pocetna">
+    
+
+    <nav>
+        <label class="logo">Hepburn Beauty</label>
+    <ul>
+        <li><a class="active" href="index1.html" target="_blank">Odri Hepbern</a></li>
+        <li><a href="index2.html" target="_blank">Monika Beluči</a></li>
+        <li><a href="index3.html" target="_blank">Princeza Dajana</a></li>
+    </ul>
+       
+    </nav>
+
+    </div>
+
+    <h1>Žene koje inspirišu</h1>
+
+    <div class ="paragraf">
+    <p>Decenijama i vekovima unazad, ljudi su tražili inspiraciju gotovo u svemu što ih okružuje. Ipak, dominantna inspiracija ljudima širom sveta i dan danas su žene.  
+
+        Mnogo puta pisali smo o ženi kao o fenomenu. Dostojanstvo i držanje jedne dame dovoljan su izvor inspiracije za umetnika, muškarca, ali pre svega za drugu ženu. Široki osmeh, uzdignuta glava, dostojanstveni govor, graciozan hod ono je što i dan danas ostavlja bez daha, naročito što je videti takvu ženu potpuna retkost. 
+        
+        Nije inspiracija samo ono što je umetnike širom sveta navodilo na duge besane noći, dugotrajan rad i ono što je izrodilo mnogobrojna umetnička dela. Inspiracija je ono što nas probudi, natera da se zamislimo i nešto kardinalno promenimo.
+        
+        Vrlo je važno i gotovo neizostavno, da jedna takva žena mora znati da se izražava i da jedna od njenih dominantnih osobina prevashodno mora biti inteligencija. Estetika nije samo ono spolja, zbog toga one plene harizmom i očaravaju kao biser koji je izrastao u utrobi školjke. 
+        
+        Decenije iza nas podarile su svetu baš takve žene, one koje su u svom vremenu oduzimale dah, plenile svojom duhovnošću i postavljale svetu jasan standard o tome kakva bi jedna žena trebalo biti, da bi je pamtili i ljudi i istorija.
+    </p>
+    </div>
+    </section>
+
+    <br>
+    <br>
+
+    <section class="container-slike">
+
+        <a href="img/slika1.jpg"><img src="img/slika1.jpg" class="img1"></a>
+        <a href="img/slika2.jpg"><img src="img/slika2.jpg" class="img2"></a>
+        <a href="img/slika3.jpg"><img src="img/slika3.jpg" class="img3"></a>
+        <a href="img/slika4.jpg"><img src="img/slika4.jpg" class="img4"></a>
+        <a href="img/slika5.jpg"><img src="img/slika5.jpg" class="img6"></a>
+        <a href="img/slika6.jpg"><img src="img/slika6.jpg" class="img7"></a>
+        <a href="img/slika7.jpg"><img src="img/slika7.jpg" class="img8"></a>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <section class="container-forma">
+        <button id="otvori">Otvori formu</button>
+        <button id="zatvori">Zatvori formu</button>
+        <h2>Postanite naš član! Registrujete se besplatno!</h2>
+        <form id="forma" method="get">
+            <input type="text" id="ime" name="Ime" placeholder="Unesite ime: " required><br><br>
+            <input type="text" id="prezime" name="Prezime" placeholder="Unesite prezime: " required><br><br>
+            <input type="text" id="email" name="email" placeholder="Unesite e-mail adresu:" required><br><br>
+            <input type="password" name="pwd" placeholder="Unesite šifru: " required><br><br>
+            <h3>Godine</h3>
+            <input type="radio" name="godine" value="15-20" checked>15-20: 
+            <input type="radio" name="godine" value="21-30">21-30: 
+            <input type="radio" name="godine" value="31-40">31-40: 
+            <input type="radio" name="godine" value=">40">>40: 
+            <h3>Vaša interesovanja</h3>
+
+            <input type="checkbox" name="interesovanje" value="Moda"> Moda <br>
+            <input type="checkbox" name="interesovanje" value="Hrana"> Hrana <br>
+            <input type="checkbox" name="interesovanje" value="Putovanja"> Putovanja <br>
+            <input type="checkbox" name="interesovanje" value="Šminka"> Šminka <br>
+
+            <h3>Članak koji Vam se najviše dopao: </h3>
+            <select name="clanak" id="clanak" required>
+                <option value="" selected hidden>--Izaberite clanak--</option>
+                <option value="svi">svi</option>
+                <option value="Odri Hepbern">Odri Hepbern</option>
+                <option value="Princeza Dajana">Princeza Dajana</option>
+                <option value="Monika Beluči">Monika Beluči</option>
+            </select>
+
+            <h3>Imate sugestije? Javite nam se!</h3>
+            <textarea name="poruka" placeholder="Napišite nam vaše poruke i sugestije!"></textarea>
+            <br><br>
+            <button type="submit" name="potvrdi" id="potvrdi" onclick="myFunction()">Potvrdi</button>
+            <label id="rezultat"></label>
+        </form>
+        
+
+        <br>
+        <br>
+
+        <p id="date"></p>
+
+        
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+    <script src="js/registracija.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+</body>
+</html>

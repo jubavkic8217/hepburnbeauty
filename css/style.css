@@ -1,0 +1,240 @@
+*{
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url(https://www.backgroundsy.com/file/large/yellow-sparkles-background.jpg);
+    background-size: cover;
+    /*crvena,zelena,plava, transparentnost 50%*/
+
+  }
+  
+  h1 {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 50px;
+  }
+  p{border-style: solid;}
+  p{border-left-style:none;}
+  p{border-right-style:none;}
+  p{border-color: black;}
+  /*border za paragraf*/
+  p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .img1{
+      height: 200px;
+      width: 200px;
+      border-radius: 15px;
+  }
+  .img2{
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+}
+.img3{
+    height: 200px;
+    width: 150px;
+    border-radius: 15px;
+}
+.img4{
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+}
+.img6{
+    height: 200px;
+    width: 150px;
+    border-radius: 15px;
+}
+.img7{
+    height: 200px;
+    width: 150px;
+    border-radius: 15px;
+}
+.img8{
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    background: khaki;
+}
+
+label.logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    padding: 0 100px;
+    line-height: 80px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a{
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+a.active, a:hover{
+    border: 1px solid mediumseagreen;
+    transition: .5s;
+}
+
+@media (max-width: 1048px){
+    label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+
+    nav ul{
+        margin-right: 20px;
+    }
+
+    nav a{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 992px){
+
+    nav ul{
+        position: fixed;
+        
+        width: 100%;
+        height: 120vh;
+        
+        background: khaki;
+        left: 0;
+        top: -20px;
+        text-align: center;
+        transition: all .5s;
+
+    }
+
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav a{
+        font-size: 20px;
+    }
+
+    a.active,a:hover{
+        border: none;
+        color: mediumseagreen;
+    }
+
+}
+
+
+
+/*pozicioniranje*/
+
+.container{
+
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pocetna{
+    align-items: center;
+    justify-items: flex-end;
+}
+
+.paragraf{
+    width: 70%;
+    background-color: khaki;
+}
+
+.container-slike{
+    display: flex;
+    flex: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.container-slike img:hover{
+    opacity: 0.5;
+    transition: all .5s;
+}
+
+form{
+    width: 300px;
+}
+
+textarea{
+    resize: vertical;
+    max-height: 100px;
+}
+
+input:focus, textarea:focus{
+    box-shadow: 0 0 4px rgba(0, 255, 0, 0.5);
+    border: 1px solid rgb(0, 255, 0);
+}
+
+::placeholder{
+    color: seagreen;
+    opacity: 1;
+}
+
+.container-forma{
+    width: 100%;
+    height: 100%;
+    background-color: lightslategrey;
+    background-image: url(https://freedesignfile.com/upload/2019/12/Woman-silhouette-vector.jpg);
+    background-size: contain;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-style: bold;
+}
+
+.container-forma h2{
+    color: rgb(245, 217, 91);
+}
+
+#forma{
+    display: inline-block;
+    color: rgb(245, 217, 91);
+    
+}
+
+#date{
+    font-style: bold;
+    color: rgb(245, 217, 91);
+    font-size: 30px;
+    text-align: right;
+}
+

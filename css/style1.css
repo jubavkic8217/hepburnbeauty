@@ -1,0 +1,238 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    background-image: url(https://www.backgroundsy.com/file/large/yellow-sparkles-background.jpg);
+    background-size: cover;
+    /*crvena,zelena,plava, transparentnost 50%*/
+
+  }
+  
+  h1 {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  img{
+      width: 300px;
+      height: 350px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 15px;
+  }
+
+  .slike-Odri{
+    background-image: url(https://www.dnevno.rs/wp-content/uploads/2018/06/29707-odri-hepburn.jpg);
+    background-size: contain;
+    width: 300px;
+    height: 350px;
+  }
+
+  .slike-Odri img:hover{
+    opacity: 0.1;
+    transition: all .5s;
+  }
+
+  .slike-Moni{
+    background-image: url(https://freedesignfile.com/upload/2019/12/Woman-silhouette-vector.jpg);
+    background-size: contain;
+    width: 300px;
+    height: 350px;
+  }
+
+  .slike-Moni img:hover{
+    opacity: 0.1;
+    transition: all .5s;
+  }
+
+  p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline-style: solid;
+    outline-width: medium;
+    outline-offset: 10px;
+    text-align: center;
+    outline-color: mediumseagreen;
+  }
+  h3{
+      font-style: italic;
+      color: mediumseagreen;
+  }
+
+  p1{
+      color: mediumseagreen;
+  }
+
+  .img1{
+      height: 350px;
+      width: 350px;
+  }
+
+  .img2{
+      height: 350px;
+      width: 300px;
+  }
+
+  .veliki-container{
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .uvod{
+    width: 85%;
+  }
+
+  .biografija{
+    width: 93.3%;
+  }
+
+  .karijera{
+    width: 93.3%;
+  }
+
+  .citat{
+    width: 60%;
+    text-align: center;
+    background-color: rgb(240, 230, 140);
+  }
+
+  .container-dajana{
+
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slike-Di{
+    background-image: url(https://media.istockphoto.com/photos/gold-crown-picture-id588367968?k=6&m=588367968&s=612x612&w=0&h=_BM3JBR7fAa7oENAsc-e9cpew2ptLFcPlVHEU_pdrdw=);
+    background-size: contain;
+    width: 300px;
+    height: 350px;
+  }
+
+  .slike-Di img:hover{
+    opacity: 0.1;
+    transition: all .5s;
+  }
+
+
+
+  .uvod-dajana{
+    width: 75%;
+    display: block;
+    background-color: khaki;
+  }
+
+  .uvod-dajana p:hover{
+    background-image: url(https://www.pngitem.com/pimgs/m/0-8592_princes-crown-png-gold-princess-crown-clipart-transparent.png);
+    background-size: contain;
+  }
+
+  .citatd{
+    text-align: center;
+    display: block;
+    background-color: khaki;
+  }
+
+
+  nav{
+    height: 80px;
+    width: 100%;
+    background: khaki;
+}
+
+label.logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    padding: 0 100px;
+    line-height: 80px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a{
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+a.active, a:hover{
+    border: 1px solid mediumseagreen;
+    transition: .5s;
+}
+
+@media (max-width: 1048px){
+    label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+
+    nav ul{
+        margin-right: 20px;
+    }
+
+    nav a{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 992px){
+
+    nav ul{
+        position: fixed;
+        
+        width: 100%;
+        height: 120vh;
+        
+        background: khaki;
+        left: 0;
+        top: -20px;
+        text-align: center;
+        transition: all .5s;
+
+    }
+
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav a{
+        font-size: 20px;
+    }
+
+    a.active,a:hover{
+        border: none;
+        color: mediumseagreen;
+    }
+
+}
